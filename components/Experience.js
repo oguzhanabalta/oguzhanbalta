@@ -78,7 +78,7 @@ export default function Experience() {
                 </Typography>
                 {mdDown ?<Hidden>
                     <Fade in={animate} style={{ transitionDelay: '250ms' }}>
-                        <div>
+                        <div style={{display:"flex",justifyContent:"center", alignItems:"center"}}>
                             <Image
                                 alt="Experience"
                                 src="/experience.svg"
@@ -97,7 +97,7 @@ export default function Experience() {
                             <Typography variant="h4" align={"center"} gutterBottom component="p">
                                 {title}
                             </Typography>
-                            <Grid container item direction={mdDown ? "column" : "row"} spacing={1} justifyContent="center">
+                            <Grid container direction={mdDown ? "column" : "row"} spacing={1} >
                                 {
                                     experience[title].map(({
                                                                organization,
