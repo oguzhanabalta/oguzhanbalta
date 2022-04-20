@@ -97,7 +97,7 @@ export default function Experience() {
                             <Typography variant="h4" align={"center"} gutterBottom component="p">
                                 {title}
                             </Typography>
-                            <Grid container item direction="row" spacing={1} justifyContent="center">
+                            <Grid container item direction={mdDown ? "column" : "row"} spacing={1} justifyContent="center">
                                 {
                                     experience[title].map(({
                                                                organization,
