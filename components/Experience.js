@@ -12,6 +12,7 @@ const useStyles = makeStyles(theme => ({
     },
     card: {
         height: '100%',
+
     },
     cardHeader: {
         paddingTop: 0
@@ -64,39 +65,39 @@ export default function Experience() {
     const classes = useStyles()
     const theme = useTheme()
     const mdDown = useMediaQuery(theme.breakpoints.down('md'))
-    const align = mdDown ? "center" : "flex-end"
-    const textAlign = mdDown ? "center" : "right"
+    const align = mdDown ? "center" : "flex-start"
 
     const animRef = useRef(null)
     const animate = useAnimate(animRef)
 
     return (
-        <Grid direction="row" container justify="center" alignItems="center" spacing={10} className={classes.cont}>
-            <Grid item xs={12} lg={6}>
-                <Typography variant="h2" gutterBottom align="center">
+        <Grid direction="row" container justifyContent="center" alignItems="center" spacing={10} className={classes.cont}>
+            <Grid item xs={12}>
+                <Typography variant="h3" align={align}>
                     Experience
                 </Typography>
-                <Hidden mdDown>
+                {mdDown ?<Hidden>
                     <Fade in={animate} style={{ transitionDelay: '250ms' }}>
                         <div>
                             <Image
                                 alt="Experience"
                                 src="/experience.svg"
-                                width="996.46"
-                                height="828.18"
+                                width="380"
+                                height="300"
                             />
                         </div>
                     </Fade>
-                </Hidden>
+                </Hidden>: null }
+
             </Grid>
             <Grid container item xs={12} lg={6} direction="column" spacing={1} alignItems={align}>
                 {
                     Object.getOwnPropertyNames(experience).map((title, id) =>
                         <Grid item key={id} className={classes.expObj}>
-                            <Typography variant="h4" align={textAlign} gutterBottom component="p">
+                            <Typography variant="h4" align={"center"} gutterBottom component="p">
                                 {title}
                             </Typography>
-                            <Grid container item direction="row" spacing={1} justify="center">
+                            <Grid container item direction="row" spacing={1} justifyContent="center">
                                 {
                                     experience[title].map(({
                                                                organization,
