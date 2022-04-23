@@ -117,7 +117,6 @@ export default function Experience() {
                                                     <CardActionArea
                                                         className={classes.cardActionArea}
                                                         href={url}
-                                                        target="_blank"
                                                         rel="noopener noreferrer"
                                                     >
                                                         <CardHeader
