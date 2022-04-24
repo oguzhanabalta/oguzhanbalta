@@ -77,7 +77,7 @@ export default function Experience() {
                     Experience
                 </Typography>
                 {mdDown ?<Hidden>
-                    <Fade in={animate} style={{ transitionDelay: '250ms' }}>
+
                         <div style={{display:"flex",justifyContent:"center", alignItems:"center"}}>
                             <Image
                                 alt="Experience"
@@ -86,7 +86,6 @@ export default function Experience() {
                                 height="300"
                             />
                         </div>
-                    </Fade>
                 </Hidden>: null }
 
             </Grid>
