@@ -155,7 +155,7 @@ export default function Experience() {
                     )
                 }
             </Grid>
-
+            <div ref={animRef}></div>
         </Grid>
     )
 }
