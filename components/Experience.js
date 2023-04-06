@@ -89,7 +89,7 @@ export default function Experience() {
                 </Hidden>: null }
 
             </Grid>
-            <Grid container item xs={12} lg={6} direction="column" spacing={1} alignItems={align}>
+            <Grid container item xs={12} lg={12} direction="column" spacing={1} alignItems={align}>
                 {
                     Object.getOwnPropertyNames(experience).map((title, id) =>
                         <Grid item key={id} className={classes.expObj}>
