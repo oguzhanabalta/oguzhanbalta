@@ -112,20 +112,6 @@
         "thumbnail": "/bitsody.jpg"
       }
 
-    ],
-    "Volunteer Experience": [
-      {
-        "organization": "Bilim ve Teknoloji Topluluğu",
-        "role": "Yönetim Kurulu Üyesi",
-        "type": "Volunteer",
-        "startDate": "2019-05-01",
-        "endDate": "2021-12-01",
-        "city": "Muğla",
-        "state": "Kötekli",
-        "country": "Türkiye",
-        "url": "https://www.linkedin.com/company/bilim-ve-teknoloji-topluluğu/",
-        "thumbnail": "/msku.jpg"
-      }
     ]
   },
   "about": {
